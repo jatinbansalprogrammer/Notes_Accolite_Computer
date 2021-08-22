@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-22T05:16:45.033Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="d6md_KWbgrD9wjvIuy2T" version="14.9.8" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-08-22T05:18:19.518Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="Ye50OAOU8YIHRpQ8y0gx" version="14.9.8" type="github" pages="2">
   <diagram id="cV0choIBR79lxZ1cyjTI" name="Page-1">
     <mxGraphModel dx="1022" dy="478" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -119,16 +119,16 @@
         <mxCell id="cAxwlr_8AtsKJ5TWRQOZ-0" />
         <mxCell id="cAxwlr_8AtsKJ5TWRQOZ-1" parent="cAxwlr_8AtsKJ5TWRQOZ-0" />
         <mxCell id="ndHv95lOXS62in8ROQ0v-2" value="&lt;b&gt;End-User (Resource Owner)&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="cAxwlr_8AtsKJ5TWRQOZ-1">
-          <mxGeometry x="160" y="80" width="180" height="40" as="geometry" />
+          <mxGeometry x="40" y="80" width="180" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ndHv95lOXS62in8ROQ0v-8" value="&lt;b&gt;Client&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="cAxwlr_8AtsKJ5TWRQOZ-1">
-          <mxGeometry x="360" y="80" width="120" height="40" as="geometry" />
+          <mxGeometry x="240" y="80" width="200" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ndHv95lOXS62in8ROQ0v-9" value="&lt;b&gt;Authorization Server&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="cAxwlr_8AtsKJ5TWRQOZ-1">
-          <mxGeometry x="520" y="80" width="140" height="40" as="geometry" />
+          <mxGeometry x="480" y="80" width="160" height="40" as="geometry" />
         </mxCell>
         <mxCell id="ndHv95lOXS62in8ROQ0v-10" value="&lt;b&gt;Resource server&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="cAxwlr_8AtsKJ5TWRQOZ-1">
-          <mxGeometry x="720" y="80" width="120" height="40" as="geometry" />
+          <mxGeometry x="680" y="80" width="160" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
