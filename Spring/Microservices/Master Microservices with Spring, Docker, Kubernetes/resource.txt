@@ -1,2 +1,0 @@
-Github Code:
-	https://github.com/eazybytes/microservices-with-spring
