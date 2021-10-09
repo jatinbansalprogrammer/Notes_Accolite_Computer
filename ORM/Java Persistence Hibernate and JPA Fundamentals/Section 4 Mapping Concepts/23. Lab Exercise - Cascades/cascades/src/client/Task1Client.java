@@ -3,6 +3,7 @@ package client;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import entity.Guide;
 import entity.Student;
 import util.HibernateUtil;
 
@@ -33,9 +34,9 @@ public class Task1Client {
 					// deleting Student[id=2L] after disassociating itself from it's Guide
         			
         			Student student = (Student) session.get(Student.class, 2L);
-        			student.setGuide(null);
-        			
-        			session.delete(student);      			
+        			Guide guide = (Guide) session.get(Guide.class, 2L);
+        			//student.setGuide(guide);
+        			guide.getStudents().add(new Student());
     
 	        		txn.commit();
         		}	catch(Exception e) {

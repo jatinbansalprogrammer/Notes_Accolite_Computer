@@ -1,0 +1,167 @@
+02:29:01,104 DEBUG SQL:109 - 
+    select
+        student0_.id as id1_1_0_,
+        student0_.enrollment_id as enrollme2_1_0_,
+        student0_.guide_id as guide_id4_1_0_,
+        student0_.name as name3_1_0_,
+        guide1_.id as id1_0_1_,
+        guide1_.name as name2_0_1_,
+        guide1_.salary as salary3_0_1_,
+        guide1_.staff_id as staff_id4_0_1_ 
+    from
+        Student student0_ 
+    left outer join
+        Guide guide1_ 
+            on student0_.guide_id=guide1_.id 
+    where
+        student0_.id=?
+02:29:01,120 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [1]
+02:29:01,140 DEBUG SQL:109 - 
+    select
+        guide0_.id as id1_0_0_,
+        guide0_.name as name2_0_0_,
+        guide0_.salary as salary3_0_0_,
+        guide0_.staff_id as staff_id4_0_0_ 
+    from
+        Guide guide0_ 
+    where
+        guide0_.id=?
+02:29:01,141 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:31:32,733 DEBUG SQL:109 - 
+    select
+        student0_.id as id1_1_0_,
+        student0_.enrollment_id as enrollme2_1_0_,
+        student0_.guide_id as guide_id4_1_0_,
+        student0_.name as name3_1_0_,
+        guide1_.id as id1_0_1_,
+        guide1_.name as name2_0_1_,
+        guide1_.salary as salary3_0_1_,
+        guide1_.staff_id as staff_id4_0_1_ 
+    from
+        Student student0_ 
+    left outer join
+        Guide guide1_ 
+            on student0_.guide_id=guide1_.id 
+    where
+        student0_.id=?
+02:31:32,749 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [1]
+02:31:32,767 DEBUG SQL:109 - 
+    select
+        guide0_.id as id1_0_0_,
+        guide0_.name as name2_0_0_,
+        guide0_.salary as salary3_0_0_,
+        guide0_.staff_id as staff_id4_0_0_ 
+    from
+        Guide guide0_ 
+    where
+        guide0_.id=?
+02:31:32,767 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:31:32,780 DEBUG SQL:109 - 
+    select
+        students0_.guide_id as guide_id4_0_0_,
+        students0_.id as id1_1_0_,
+        students0_.id as id1_1_1_,
+        students0_.enrollment_id as enrollme2_1_1_,
+        students0_.guide_id as guide_id4_1_1_,
+        students0_.name as name3_1_1_ 
+    from
+        Student students0_ 
+    where
+        students0_.guide_id=?
+02:31:32,781 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:32:08,249 DEBUG SQL:109 - 
+    select
+        student0_.id as id1_1_0_,
+        student0_.enrollment_id as enrollme2_1_0_,
+        student0_.guide_id as guide_id4_1_0_,
+        student0_.name as name3_1_0_,
+        guide1_.id as id1_0_1_,
+        guide1_.name as name2_0_1_,
+        guide1_.salary as salary3_0_1_,
+        guide1_.staff_id as staff_id4_0_1_ 
+    from
+        Student student0_ 
+    left outer join
+        Guide guide1_ 
+            on student0_.guide_id=guide1_.id 
+    where
+        student0_.id=?
+02:32:08,276 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [1]
+02:32:08,300 DEBUG SQL:109 - 
+    select
+        guide0_.id as id1_0_0_,
+        guide0_.name as name2_0_0_,
+        guide0_.salary as salary3_0_0_,
+        guide0_.staff_id as staff_id4_0_0_ 
+    from
+        Guide guide0_ 
+    where
+        guide0_.id=?
+02:32:08,301 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:32:08,336 DEBUG SQL:109 - 
+    update
+        Student 
+    set
+        enrollment_id=?,
+        guide_id=?,
+        name=? 
+    where
+        id=?
+02:32:08,337 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - []
+02:32:08,337 TRACE BasicBinder:81 - binding parameter [2] as [BIGINT] - [2]
+02:32:08,338 TRACE BasicBinder:69 - binding parameter [3] as [VARCHAR] - [null]
+02:32:08,338 TRACE BasicBinder:81 - binding parameter [4] as [BIGINT] - [1]
+02:32:49,369 DEBUG SQL:109 - select student0_.id as id1_1_0_, student0_.enrollment_id as enrollme2_1_0_, student0_.guide_id as guide_id4_1_0_, student0_.name as name3_1_0_, guide1_.id as id1_0_1_, guide1_.name as name2_0_1_, guide1_.salary as salary3_0_1_, guide1_.staff_id as staff_id4_0_1_ from Student student0_ left outer join Guide guide1_ on student0_.guide_id=guide1_.id where student0_.id=?
+02:32:49,382 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [1]
+02:33:25,107 DEBUG SQL:109 - select student0_.id as id1_1_0_, student0_.enrollment_id as enrollme2_1_0_, student0_.guide_id as guide_id4_1_0_, student0_.name as name3_1_0_, guide1_.id as id1_0_1_, guide1_.name as name2_0_1_, guide1_.salary as salary3_0_1_, guide1_.staff_id as staff_id4_0_1_ from Student student0_ left outer join Guide guide1_ on student0_.guide_id=guide1_.id where student0_.id=?
+02:33:25,122 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [1]
+02:33:25,151 DEBUG SQL:109 - select guide0_.id as id1_0_0_, guide0_.name as name2_0_0_, guide0_.salary as salary3_0_0_, guide0_.staff_id as staff_id4_0_0_ from Guide guide0_ where guide0_.id=?
+02:33:25,151 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:34:17,051 DEBUG SQL:109 - select student0_.id as id1_1_0_, student0_.enrollment_id as enrollme2_1_0_, student0_.guide_id as guide_id4_1_0_, student0_.name as name3_1_0_, guide1_.id as id1_0_1_, guide1_.name as name2_0_1_, guide1_.salary as salary3_0_1_, guide1_.staff_id as staff_id4_0_1_ from Student student0_ left outer join Guide guide1_ on student0_.guide_id=guide1_.id where student0_.id=?
+02:34:17,073 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [1]
+02:34:17,108 DEBUG SQL:109 - select guide0_.id as id1_0_0_, guide0_.name as name2_0_0_, guide0_.salary as salary3_0_0_, guide0_.staff_id as staff_id4_0_0_ from Guide guide0_ where guide0_.id=?
+02:34:17,109 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:34:17,135 DEBUG SQL:109 - update Student set enrollment_id=?, guide_id=?, name=? where id=?
+02:34:17,136 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [1]
+02:34:17,137 TRACE BasicBinder:81 - binding parameter [2] as [BIGINT] - [2]
+02:34:17,137 TRACE BasicBinder:81 - binding parameter [3] as [VARCHAR] - [jatin]
+02:34:17,138 TRACE BasicBinder:81 - binding parameter [4] as [BIGINT] - [1]
+02:35:56,685 DEBUG SQL:109 - select student0_.id as id1_1_0_, student0_.enrollment_id as enrollme2_1_0_, student0_.guide_id as guide_id4_1_0_, student0_.name as name3_1_0_, guide1_.id as id1_0_1_, guide1_.name as name2_0_1_, guide1_.salary as salary3_0_1_, guide1_.staff_id as staff_id4_0_1_ from Student student0_ left outer join Guide guide1_ on student0_.guide_id=guide1_.id where student0_.id=?
+02:35:56,703 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:35:56,732 DEBUG SQL:109 - select guide0_.id as id1_0_0_, guide0_.name as name2_0_0_, guide0_.salary as salary3_0_0_, guide0_.staff_id as staff_id4_0_0_ from Guide guide0_ where guide0_.id=?
+02:35:56,732 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:35:56,753 DEBUG SQL:109 - update Student set enrollment_id=?, guide_id=?, name=? where id=?
+02:35:56,754 TRACE BasicBinder:81 - binding parameter [1] as [VARCHAR] - [2]
+02:35:56,754 TRACE BasicBinder:81 - binding parameter [2] as [BIGINT] - [2]
+02:35:56,755 TRACE BasicBinder:81 - binding parameter [3] as [VARCHAR] - [bansal]
+02:35:56,755 TRACE BasicBinder:81 - binding parameter [4] as [BIGINT] - [2]
+02:37:08,183 DEBUG SQL:109 - select student0_.id as id1_1_0_, student0_.enrollment_id as enrollme2_1_0_, student0_.guide_id as guide_id4_1_0_, student0_.name as name3_1_0_, guide1_.id as id1_0_1_, guide1_.name as name2_0_1_, guide1_.salary as salary3_0_1_, guide1_.staff_id as staff_id4_0_1_ from Student student0_ left outer join Guide guide1_ on student0_.guide_id=guide1_.id where student0_.id=?
+02:37:08,205 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:37:08,234 DEBUG SQL:109 - select guide0_.id as id1_0_0_, guide0_.name as name2_0_0_, guide0_.salary as salary3_0_0_, guide0_.staff_id as staff_id4_0_0_ from Guide guide0_ where guide0_.id=?
+02:37:08,234 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:37:08,241 DEBUG SQL:109 - select students0_.guide_id as guide_id4_0_0_, students0_.id as id1_1_0_, students0_.id as id1_1_1_, students0_.enrollment_id as enrollme2_1_1_, students0_.guide_id as guide_id4_1_1_, students0_.name as name3_1_1_ from Student students0_ where students0_.guide_id=?
+02:37:08,242 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:40:17,643 DEBUG SQL:109 - select student0_.id as id1_1_0_, student0_.enrollment_id as enrollme2_1_0_, student0_.guide_id as guide_id4_1_0_, student0_.name as name3_1_0_, guide1_.id as id1_0_1_, guide1_.name as name2_0_1_, guide1_.salary as salary3_0_1_, guide1_.staff_id as staff_id4_0_1_ from Student student0_ left outer join Guide guide1_ on student0_.guide_id=guide1_.id where student0_.id=?
+02:40:17,666 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:40:17,706 DEBUG SQL:109 - select guide0_.id as id1_0_0_, guide0_.name as name2_0_0_, guide0_.salary as salary3_0_0_, guide0_.staff_id as staff_id4_0_0_ from Guide guide0_ where guide0_.id=?
+02:40:17,707 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:40:17,714 DEBUG SQL:109 - select students0_.guide_id as guide_id4_0_0_, students0_.id as id1_1_0_, students0_.id as id1_1_1_, students0_.enrollment_id as enrollme2_1_1_, students0_.guide_id as guide_id4_1_1_, students0_.name as name3_1_1_ from Student students0_ where students0_.guide_id=?
+02:40:17,715 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:42:47,978 DEBUG SQL:109 - select student0_.id as id1_1_0_, student0_.enrollment_id as enrollme2_1_0_, student0_.guide_id as guide_id4_1_0_, student0_.name as name3_1_0_, guide1_.id as id1_0_1_, guide1_.name as name2_0_1_, guide1_.salary as salary3_0_1_, guide1_.staff_id as staff_id4_0_1_ from Student student0_ left outer join Guide guide1_ on student0_.guide_id=guide1_.id where student0_.id=?
+02:42:47,998 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:42:48,039 DEBUG SQL:109 - select guide0_.id as id1_0_0_, guide0_.name as name2_0_0_, guide0_.salary as salary3_0_0_, guide0_.staff_id as staff_id4_0_0_ from Guide guide0_ where guide0_.id=?
+02:42:48,040 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:42:48,048 DEBUG SQL:109 - select students0_.guide_id as guide_id4_0_0_, students0_.id as id1_1_0_, students0_.id as id1_1_1_, students0_.enrollment_id as enrollme2_1_1_, students0_.guide_id as guide_id4_1_1_, students0_.name as name3_1_1_ from Student students0_ where students0_.guide_id=?
+02:42:48,049 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:51:07,000 DEBUG SQL:109 - select student0_.id as id1_1_0_, student0_.enrollment_id as enrollme2_1_0_, student0_.guide_id as guide_id4_1_0_, student0_.name as name3_1_0_, guide1_.id as id1_0_1_, guide1_.name as name2_0_1_, guide1_.salary as salary3_0_1_, guide1_.staff_id as staff_id4_0_1_ from Student student0_ left outer join Guide guide1_ on student0_.guide_id=guide1_.id where student0_.id=?
+02:51:07,028 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:51:07,081 DEBUG SQL:109 - select guide0_.id as id1_0_0_, guide0_.name as name2_0_0_, guide0_.salary as salary3_0_0_, guide0_.staff_id as staff_id4_0_0_ from Guide guide0_ where guide0_.id=?
+02:51:07,082 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:51:07,095 DEBUG SQL:109 - select students0_.guide_id as guide_id4_0_0_, students0_.id as id1_1_0_, students0_.id as id1_1_1_, students0_.enrollment_id as enrollme2_1_1_, students0_.guide_id as guide_id4_1_1_, students0_.name as name3_1_1_ from Student students0_ where students0_.guide_id=?
+02:51:07,096 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:51:29,461 DEBUG SQL:109 - select student0_.id as id1_1_0_, student0_.enrollment_id as enrollme2_1_0_, student0_.guide_id as guide_id4_1_0_, student0_.name as name3_1_0_, guide1_.id as id1_0_1_, guide1_.name as name2_0_1_, guide1_.salary as salary3_0_1_, guide1_.staff_id as staff_id4_0_1_ from Student student0_ left outer join Guide guide1_ on student0_.guide_id=guide1_.id where student0_.id=?
+02:51:29,485 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:51:29,537 DEBUG SQL:109 - select guide0_.id as id1_0_0_, guide0_.name as name2_0_0_, guide0_.salary as salary3_0_0_, guide0_.staff_id as staff_id4_0_0_ from Guide guide0_ where guide0_.id=?
+02:51:29,538 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
+02:51:29,548 DEBUG SQL:109 - select students0_.guide_id as guide_id4_0_0_, students0_.id as id1_1_0_, students0_.id as id1_1_1_, students0_.enrollment_id as enrollme2_1_1_, students0_.guide_id as guide_id4_1_1_, students0_.name as name3_1_1_ from Student students0_ where students0_.guide_id=?
+02:51:29,549 TRACE BasicBinder:81 - binding parameter [1] as [BIGINT] - [2]
