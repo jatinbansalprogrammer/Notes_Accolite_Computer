@@ -1,0 +1,28 @@
+			++++++++++++++++++Upper Bound++++++++++++++++++
+	
+ArrayList<? extends Number> list = new ArrayList<>();
+	1. We can't add items to the list as list may be 
+		ArrayList<? extends Number> list = new ArrayList<Integer>();
+		ArrayList<? extends Number> list = new ArrayList<Double>();
+	2. We can remove items from the list.
+		ArrayList<? extends Number> list = new ArrayList<Integer>();
+		list.remove(0);
+			as in remove(index) doesn't matter what is the type of items.
+	3. We can read items from the list. 
+			as in case of reading, the items' type doesn't matter.
+			But we have to use temp var as Number bcoz we don't know the exact type of items.
+			
+			
+			++++++++++++++++++Lower Bound++++++++++++++++++
+ArrayList<? super Number> list = new ArrayList<>();
+	1. We can add Number or its sub-type items bcoz the assigned list is of the following type.
+			ArrayList<? super Number> list = new ArrayList<Number>();
+			ArrayList<? super Number> list = new ArrayList<Serializable>();
+			ArrayList<? super Number> list = new ArrayList<Object>();
+			So, followings are fine
+			list.add(new Integer(2));
+			list.add(new Double(3.3));
+			as 2, and 3.3 are of type Number
+			
+			
+			

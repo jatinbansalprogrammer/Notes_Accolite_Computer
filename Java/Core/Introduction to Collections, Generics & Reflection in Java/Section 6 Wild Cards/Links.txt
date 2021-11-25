@@ -1,0 +1,2 @@
+If you want to learn more about Generics then 
+	http://www.angelikalanger.com/GenericsFAQ/JavaGenericsFAQ.html

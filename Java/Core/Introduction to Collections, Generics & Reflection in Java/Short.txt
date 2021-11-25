@@ -1,0 +1,63 @@
+		+++++++++++++++++Generics+++++++++++++++++
+1. Generics Benefits:
+	A.	Extends Java Type System
+		E.g.
+		class Cache<T>{...}
+		The above type Cache can be instantiated with different T Parameter.
+	B. 	Stronger Type Checks at compile-time.
+		E.g.
+		List<Person> list = new ArrayList<Person>();
+		list.add(new Person());
+		Above, compiler will check if the value being added is of type Person or not. Otherwise compile-time error.
+	C.	No need for explicit type-casting.
+		Person p = (Person) list.get(0);
+		Above, we don't need to typecaste the returned value into Person.
+	D.	Generic Algorithms
+		E.g.
+		One sorting algo for integers, floats, doubles, ...
+		
+		
+		
+2. Motivation:
+	-> Overloaded add(...) method.
+	
+3. Generic Method
+	-> public <T> void showItem(T item){}
+	-> public <T> T showItem(T item){}
+	-> Calling static generic methods
+		Foo.<String>createFoo();
+
+4.	Question and clearity
+	public <T> void rough() {
+		T t = (T) new Person();
+		System.out.println(t + " what is this tjis");
+	}
+	Justify line -> T t = (T) new Person();
+		-> T can be anything. Who knows. No Problem. Whatever it is at like
+		   someObj.rough<Integer>(); <- You can say, generic type is Integer so we're typecasting Person into Integer which is wrong but this statement will not be justified as per generic method definition.
+		   Always remmeber, Generic Types are replaced with Object during type erasion.
+		   
+5.	<T extends A & B & C>
+
+6. Type Inference	
+	A. The Type Inference Algo determines the <T> of the arguments.
+	B. Another Feature: 
+		List<String> list = new ArrayList<>();
+
+
+Terms:
+	Type Inference Algorithm.
+	Bounded Generic Types.
+	Bounded Types.
+	Type argument.
+	Parameterized type.
+		   
+		
+
+	
+
+
+	
+	
+
+
