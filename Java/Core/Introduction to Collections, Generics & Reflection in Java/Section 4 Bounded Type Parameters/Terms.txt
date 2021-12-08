@@ -1,0 +1,3 @@
+	<T extends interface_or_class>
+	<T extends Comparable<T>>
+
