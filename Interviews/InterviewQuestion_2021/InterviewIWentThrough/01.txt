@@ -1,0 +1,8 @@
+Application Context.
+API
+	Content Negotiation.
+	Versioning Control.
+	
+@Component vs. @Repository
+Spring Batch
+AOP
