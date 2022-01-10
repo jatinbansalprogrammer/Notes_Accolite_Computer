@@ -1,4 +1,4 @@
 DONE:
-	Till section 7
+	Till section 9
 
-Section 9, 10 skipped.
+Section 10 skipped.
